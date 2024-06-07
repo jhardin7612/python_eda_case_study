@@ -19,7 +19,7 @@ Source: https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-popula
 
 
 ## *Questions*
-
+What different economic factors in the Balkan and Baltic regions are correlated with the HIV rate of their respective populace.
 ## *Curation*
 
 ## Exploration
