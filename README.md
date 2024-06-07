@@ -17,7 +17,7 @@ Data was acquired from the World Bank and includes 345 indicators, such as immun
 Source: https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-statistics
 
 ## *Questions*
-
+What different economic factors in the Balkan and Baltic regions are correlated with the HIV rate of their respective populace.
 ## *Curation*
 
 ## Exploration
