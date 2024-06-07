@@ -35,13 +35,16 @@ Source: https://www.theglobaleconomy.com
 JME:
 This program processes economic and health data for countries, grouped by regions (Balkans and Baltics), using pandas for data manipulation. We first reshape the health data from wide to long format using pd.concat. Then, we filter economic data for the years 1995-2010 and calculate the mean values for economic indicators for each region using groupby and mean. Similarly, we calculate mean HIV rates for each region. Initially, we explored using .interpolate() to estimate missing values, but we decided to simplify the approach by filling missing values directly with the .mean. We combine these datasets by concatenating the economic and HIV mean values using pd.concat, creating a comprehensive DataFrame for each region. We compute correlation matrices using corr and visualize these correlations with seaborn heatmaps to identify relationships between economic indicators and HIV rates.
 
+RBP:
+In order to frame the data over time, I used df.T to make "Years" my index.  I then replaced the default columns with "Indicator Names". I filtered out all countries not located in the target region and then combined duplicate columns using mean. I filtered out columns that were not relevent to HIV rates and healthcare spending. This gave me a  dataframe that can be directly analyzed  using .corr().
+
 ## Our Approach
 With respect to time and experience levels we decided to create a subset of the data that focused on the Balkan and Baltic regions. The Baltic region was already included, however we needed to create the Balkan region ourselves. To do this, we extracted the countries, agregated the data, and used the mean of that subset for the populating the rest of the columns. 
 
 ## *Analysis*
 ![alt text](image.png)
 ![alt text](image-1.png)
-![alt text](image-2.png)
+
 ![alt text](image-7.png)
 ![alt text](image-8.png)
 
