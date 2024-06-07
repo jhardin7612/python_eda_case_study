@@ -38,6 +38,9 @@ This program processes economic and health data for countries, grouped by region
 RBP:
 In order to frame the data over time, I used df.T to make "Years" my index.  I then replaced the default columns with "Indicator Names". I filtered out all countries not located in the target region and then combined duplicate columns using mean. I filtered out columns that were not relevent to HIV rates and healthcare spending. This gave me a  dataframe that can be directly analyzed  using .corr().
 
+AMO:
+I attempted to get a general view of economic stature with GNI of the country and plotting it on bar plot. Filtering down the Inidicator to only show the GNI, then filtering out the Balkan countries to form their own dataframe, as the Baltic region was already it's own index. From there I averaged the mean of the Balkan GNI and plotted it on a box plot for each country.
+
 ## Our Approach
 With respect to time and experience levels we decided to create a subset of the data that focused on the Balkan and Baltic regions. The Baltic region was already included, however we needed to create the Balkan region ourselves. To do this, we extracted the countries, agregated the data, and used the mean of that subset for the populating the rest of the columns. 
 
